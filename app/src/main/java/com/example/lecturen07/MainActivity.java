@@ -50,11 +50,15 @@ public class MainActivity extends AppCompatActivity {
         textView.setText(String.valueOf(Count));
     }
 
-    public void moveActivity3(View view) {
+    public void moveActivity2(View view) {
         Intent intent=new Intent(this,MainActivity2.class);
+        startActivity(intent);
     }
 
-    public void moveActivity2(View view) {
+    public void moveActivity3(View view) {
         Intent intent=new Intent(this,MainActivity3.class);
+        startActivity(intent);
     }
+
+
 }
