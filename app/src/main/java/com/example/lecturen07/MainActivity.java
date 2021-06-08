@@ -1,4 +1,5 @@
 package com.example.lecturen07;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -33,6 +34,12 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
         Log.d("ALC","onStop called");
     }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("value",Count);
+    }
     Button button;
     TextView textView;
     int Count=20;
@@ -43,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
         button=findViewById(R.id.BtnCount);
         textView=findViewById(R.id.TextViewcounter);
         Log.d("ALC","onCreate called");
+        if (savedInstanceState!=null)
+        {
+            Count=savedInstanceState.getInt("value");
+            textView.setText(String.valueOf(Count));
+        }
     }
     public void Click(View view) {
         Count=Integer.parseInt(textView.getText().toString());
