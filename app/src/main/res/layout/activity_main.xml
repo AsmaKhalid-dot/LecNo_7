@@ -35,5 +35,19 @@
             android:onClick="Click"
             android:text="Count"
             android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/BtnActivity2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity2"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/BtnActivity3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity3"
+            android:textSize="30sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
