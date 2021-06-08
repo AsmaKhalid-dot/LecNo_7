@@ -41,6 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Activity2"
+            android:onClick="moveActivity2"
             android:textSize="30sp" />
 
         <Button
@@ -48,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Activity3"
+            android:onClick="moveActivity3"
             android:textSize="30sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
